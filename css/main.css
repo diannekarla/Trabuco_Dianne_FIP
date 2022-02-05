@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Sofia", Helvetica, Arial, sans-serif;
+}
+
+header, section, footer{
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+/* GENERAL */ 
+
+.hidden {
+  display: none;
+}
+.overflow > div{
+  overflow: hidden;
+}
+
+/* FONTS */ 
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../assets/fonts/sofiapro-light.otf");
+}
+
+@font-face {
+  font-family: "Ronnies";
+  src: url("../assets/fonts/Ronies.otf");
+}
+
+.font-18{
+  font-size: 18px;
+}
+.font-24{
+  font-size: 24px;
+}
+a{
+  text-decoration: none;
+  color:#464646;
+}
+
+/* FORMS */ 
+
+form input{
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+form input[type="submit"]{
+  width: 100%;
+}
+
+footer form input[type="email"]{
+  flex-grow: 2;
+}
+footer form input[type="submit"]{
+  flex-grow: 1;
+  width: auto;
+}
+
+/* BUTTONS */ 
+.btn{
+  padding: 5px 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  width: fit-content;
+  cursor: pointer;
+}
+.btn-red{
+  background: #df2f26;
+  color: white;
+}
+
+/* TEXT */ 
+.text-center{
+  text-align: center;
+}
+.text-red{
+  color: #df2f26;
+}
+
+/* WIDTHS */ 
+
+.width-100{
+  width: 100%
+}
+
+/* PADDINGS & MARGINS */ 
+
+.padding-0{
+  padding: 0;
+}
+
+/* FLEX CONTAINERS */ 
+
+.flex{
+  display: flex;
+  line-height: 2;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.flex-gap{
+  display: flex;
+  gap: 20px;
+}
+
+.flex-gap-2{
+  display: flex;
+  gap: 40px;
+}
+
+.flex-gap-3{
+  display: flex;
+  gap: 60px;
+}
+
+/* FLEX ITEMS */ 
+
+.flex .flex-item{
+  flex:1;
+}
+
+/* PARAGRAPHS */
+
+.compressed-p{
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+/* HEADER */
+
+.header{
+  height: 220px;
+  justify-content: space-evenly;
+  padding-top: 40px;
+}
+
+.header nav{
+  border: 2px solid #464646;
+  border-right: none;
+  border-left: none;
+  padding: 30px 0px;
+}
+
+nav ul{
+  gap:40px
+}
+
+nav .flex-item{
+  padding: 0px 20px;
+  text-align: center;
+}
+
+nav li a{
+  text-decoration: none;
+  color:#464646;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+
+section.default{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+section.default > div:first-child{
+  padding: 50px 0px 80px;
+}
+section > div > .title{
+  font-size: 30pt;
+  margin-bottom: 30px;
+}
+section > div > .description{
+  width: 50%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* WELCOME PAGE*/
+
+.welcome-landing{
+  justify-content: space-evenly;
+  padding: 50px;
+}
+.welcome-landing .text{
+  font-size: 60px;
+}
+
+/* HERO */
+
+.hero{
+  margin-top: 20px;
+}
+
+.hero .hero-text{
+  background-color: #d1d1d1;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 30px;
+  font-size: 20px;
+}
+
+.hero .hero-text .tagline{
+  font-size: 40pt;
+  font-weight: bold;
+}
+
+.hero .hero-text .tagline{
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+    
+.hero .hero-image img{
+  height: 100%;
+}
+
+/* PRODUCT VARIATIONS */
+.product-variations > div{
+  text-align: center;
+  line-height: 1.5;
+  overflow: hidden;
+}
+.product-variations > div h3{
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+/* MISION VISION */
+.mission-vision {
+  padding-top: 40px;
+  text-align: center;
+}
+.mission-vision > div{
+  background: #d1d1d1;
+  padding: 50px;
+}
+
+.mission-vision > div h4{
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+/* DESIGNS TO DELIVER */
+.designs-to-deliver > div{
+  background-color: #d1d1d1;
+  padding: 40px;
+  overflow: hidden;
+}
+.designs-to-deliver > div img{
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer{
+  padding-top: 40px;
+  font-size: 18px;
+}
+footer > div{
+  background-color: #d1d1d1;
+  padding: 40px;
+}
+footer ul {
+  column-count: 2;
+  margin-top: 40px;
+}
