@@ -5,31 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Holsten Boot Beer</title>
+  <link rel="icon" type="image/png" href="assets/icons/fav.png">
   <link rel="stylesheet" href="css/reset.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
 
 </head>
 <body class="padding-0">
   <!-- Content goes here -->
-  <div class="flex">
+  <div class="flex flex-center wrap">
     <div class="flex-item">
       <div class="flex-column flex-center welcome-landing">
-        <img src="assets/logo/prop-logo-black.svg" alt="Holsten Logo">
-        <form action="#" method="GET" class="flex flex-column">
-          <div class="text">Are you over 18?</div>
-          <div class="flex flex-center">
-            <input type="number" min="1900" max="2022" step="1" value="2016" class="flex-item"/>
-            <input type="number" min="01" max="31" step="1" value="01" class="flex-item" />
-            <input type="number" min="01" max="12" step="1" value="02" class="flex-item" />
+        <h1 class="hidden">Landing Page</h1>
+        <img src="assets/logo/holsten-black.svg" alt="Holsten Logo">
+        <form action="#" class="flex flex-column width-80" onsubmit="return validateAge()">
+          <div class="text text-center">Are you over 18?</div>
+          <div class="flex flex-center flex-gap">
+            <h2 class="hidden">Confirmation</h2>
+            <input type="number" min="1900" max="2022" step="1" value="2016" class="flex-item" id="year"/>
+            <input type="number" min="01" max="31" step="1" value="01" class="flex-item" id="month"/>
+            <input type="number" min="01" max="12" step="1" value="02" class="flex-item" id="day"/>
           </div>
           <input type="submit" value="Confirm" text="Confirm" class="flex-item btn btn-red">
         </form>
+        <div id="result" class="hidden"><p>Sorry, but you cannot browse through our website. <br> Please re-enter your age if you are 18 years old and above. </p></div>
       </div>
-      
+
     </div>
 
     <div class="flex-item">
-      <img src="assets/tmp/welcome-image.jpg" alt="Welcome to Holsten!" class="width-100">  
+      <img src="assets/tmp/welcome-image.jpg" alt="Welcome to Holsten!" class="width-100">
     </div>
   </div>
 
