@@ -23,7 +23,7 @@ function validateAge(){
 
     }
 
-    return false; 
+    return false;
 }
 
 function displayFAQ() {
