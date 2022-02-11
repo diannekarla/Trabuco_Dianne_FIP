@@ -26,4 +26,3 @@ Two brands will be assigned and an entirely new brand must be created by 'mashin
 
 ## License
 Dianne Karla Trabuco
-MIT
