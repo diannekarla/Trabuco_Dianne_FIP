@@ -135,6 +135,10 @@ footer form input[type="submit"]{
   margin-bottom: 20px;
 }
 
+.margin-bottom-36{
+  margin-bottom: 36px;
+}
+
 /* FLEX CONTAINERS */
 
 .flex{
@@ -252,8 +256,8 @@ a:hover, a:active {
 /* SECTIONS */
 
 section.default{
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 36px;
+  margin-bottom: 36px;
 }
 section.default > div:first-child{
   padding: 50px 0px 80px;
