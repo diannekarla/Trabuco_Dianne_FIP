@@ -1,14 +1,19 @@
 @charset "UTF-8";
 
 body {
-  font-family: "Poppins-Reg", Helvetica, Arial, sans-serif;
+  font-family: "Poppins", "Helvetica", "Arial", "sans-serif";
+  font-size: 20px;
+  cursor:url("../images/icon-bottle.jpg"), auto;
 }
 
 header, section, footer{
   padding-right: 50px;
   padding-left: 50px;
-  }
+}
 
+strong{
+  font-weight: bold;
+}
 /* GENERAL */
 
 .hidden {
@@ -34,12 +39,12 @@ header, section, footer{
 }
 
 @font-face {
-  font-family: "Poppins-Reg";
-  src: url("../assets/fonts/Poppins-Regular.ttf");
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Light.ttf");
 }
 
 @font-face {
-  font-family: "Poppins-Med";
+  font-family: "Poppins-Bold";
   src: url("../assets/fonts/Poppins-Medium.ttf");
 }
 
@@ -227,7 +232,7 @@ footer form input[type="submit"]{
   border: 2px solid #464646;
   border-right: none;
   border-left: none;
-  padding: 30px 0px;
+  padding: 20px 0px;
 }
 
 nav ul{
@@ -244,7 +249,17 @@ nav li a{
   color:#464646;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 14pt;
+  font-size: 20px;
+}
+
+nav li.active a{
+  color: #df2f26;
+  border-bottom: solid 3px #df2f26;
+}
+
+nav li a:hover{
+  color: #df2f26;
+  border-bottom: solid 3px #df2f26;
 }
 
 a:hover, a:active {
@@ -256,8 +271,8 @@ a:hover, a:active {
 /* SECTIONS */
 
 section.default{
-  margin-top: 36px;
-  margin-bottom: 36px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 section.default > div:first-child{
   padding: 50px 0px 80px;
@@ -295,7 +310,7 @@ section > div > .description{
 }
 
 .hero .hero-text{
-  /*! background-color: #d1d1d1; */
+  /*! background-color: #f7f7f7; */
   justify-content: center;
   align-content: center;
   padding: 30px;
@@ -321,6 +336,8 @@ section > div > .description{
   text-align: center;
   line-height: 1.5;
   overflow: hidden;
+  background: #f7f7f7;
+  padding-bottom: 30px;
 }
 .product-variations > div h3{
   font-size: 22px;
@@ -342,8 +359,9 @@ section > div > .description{
   text-align: center;
 }
 .mission-vision > div{
-  background: #d1d1d1;
-  padding: 50px;
+  background: #f7f7f7;
+  padding: 0px 50px;
+  min-height: 800px;
 }
 
 .mission-vision > div h4{
@@ -352,10 +370,14 @@ section > div > .description{
   padding-bottom: 20px;
 }
 
+.mission-vision p {
+  padding-bottom: 20px;
+}
+
 /* DESIGNS TO DELIVER */
 .designs-to-deliver > div{
-  background-color: #d1d1d1;
-  padding: 40px;
+  background-color: #f7f7f7;
+  padding: 20px;
   overflow: hidden;
 }
 .designs-to-deliver > div img{
@@ -420,7 +442,7 @@ footer{
   padding-bottom: 40px;
 }
 footer > div{
-  background-color: #d1d1d1;
+  background-color: #f7f7f7;
   padding: 40px;
 }
 footer ul {
@@ -448,7 +470,7 @@ footer ul {
   }
 
   footer{
-    background: #d1d1d1;
+    background: #f7f7f7;
   }
 
   footer > div{
