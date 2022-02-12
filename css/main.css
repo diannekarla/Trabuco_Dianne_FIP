@@ -144,6 +144,10 @@ footer form input[type="submit"]{
   margin-bottom: 36px;
 }
 
+.margin {
+  margin: 50px;
+}
+
 /* FLEX CONTAINERS */
 
 .flex{
@@ -418,6 +422,11 @@ section .faq-item > div:last-child{
   opacity: 1;
   height: fit-content;
   transition: all 1s ease-in-out;
+}
+
+.about-p {
+  text-align: justify;
+  padding-right: 35px;
 }
 
 /* ADVERTISEMENTS */
