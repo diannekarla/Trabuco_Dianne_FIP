@@ -2,7 +2,7 @@
 
 body {
   font-family: "Poppins", "Helvetica", "Arial", "sans-serif";
-  font-size: 20px;
+  font-size: 18px;
   cursor:url("../images/icon-bottle.jpg"), auto;
 }
 
@@ -63,7 +63,6 @@ a{
 
 input, textarea{
   padding: 15px;
-  font-size: 18px;
   border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -283,16 +282,18 @@ section.default > div:first-child{
 }
 section > div > .title{
   font-size: 30pt;
+  margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
   line-height: 1.2;
   text-transform: uppercase;
 }
 section > div > .description{
-  width: 50%;
+  width: 80%;
   text-align: center;
   line-height: 1.5;
-  font-size: 18pt;
+  font-size: 20px;
+  padding-bottom: 30px;
 }
 
 /* WELCOME PAGE*/
@@ -393,11 +394,28 @@ section > div > .description{
 section.about-us .img-container img{
   width: 100%;
 }
+
+section.about-us{
+  margin-top: 50px;
+  gap: 30px; 
+}
+
+section.about-us .about-content h3{
+  align-self: start;
+  padding-bottom: 20px;
+}
+
+section.about-us .about-content p{
+  text-align: justify;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
 section .faq-item{
   border-radius: 10px;
   border: 1px solid gray;
   margin-bottom: 20px;
-  width: 70%;
+  width: 80%;
 }
 section .faq-item > div{
   padding: 20px;
@@ -422,11 +440,6 @@ section .faq-item > div:last-child{
   opacity: 1;
   height: fit-content;
   transition: all 1s ease-in-out;
-}
-
-.about-p {
-  text-align: justify;
-  padding-right: 35px;
 }
 
 /* ADVERTISEMENTS */
