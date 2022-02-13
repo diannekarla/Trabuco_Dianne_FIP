@@ -12,12 +12,11 @@
 </head>
 <body class="padding-0">
   <!-- Content goes here -->
-  <div class="flex flex-center wrap">
-    <div class="flex-item">
-      <div class="flex-column flex-center welcome-landing">
+  <div class="flex welcome-landing wrap">
+      <div class="flex flex-column">
         <h1 class="hidden">Landing Page</h1>
-        <img src="assets/logo/holsten-black.svg" alt="Holsten Logo">
-        <form action="#" class="flex flex-column width-80" onsubmit="return validateAge()">
+        <img src="assets/logo/holsten-black.svg" alt="Holsten Logo" class="logo">
+        <form action="#" class="flex flex-column" onsubmit="return validateAge()">
           <div class="text text-center">Are you over 18?</div>
           <div class="flex flex-center flex-gap">
             <h2 class="hidden">Confirmation</h2>
@@ -29,13 +28,7 @@
         </form>
         <div id="result" class="hidden"><p>Sorry, but you cannot browse through our website. <br> Please re-enter your age if you are 18 years old and above. </p></div>
       </div>
-
-    </div>
-
-    <div class="flex-item">
-      <img src="images/beer_glasses.jpg" alt="Welcome to Holsten!" class="width-100">
-    </div>
-  </div>
+</div>
 
 
   <!-- JS always at the bottom -->

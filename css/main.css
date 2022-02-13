@@ -72,6 +72,7 @@ input, textarea{
 
 form input[type="submit"]{
   width: 100%;
+  font-size: 18px;
 }
 
 footer form input[type="email"]{
@@ -299,9 +300,25 @@ section > div > .description{
 /* WELCOME PAGE*/
 
 .welcome-landing{
-  justify-content: space-evenly;
-  padding: 50px;
+  background-image: url("../images/04-image.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+
 }
+
+.welcome-landing > div{
+  background-color: rgba(255,255,255,.5);
+  padding: 50px;
+  justify-content: center;
+}
+
+.welcome-landing .logo{
+  width: 70%;
+  align-self: center;
+}
+
 .welcome-landing .text{
   font-size: 60px;
   line-height: 1;
@@ -397,7 +414,7 @@ section.about-us .img-container img{
 
 section.about-us{
   margin-top: 50px;
-  gap: 30px; 
+  gap: 30px;
 }
 
 section.about-us .about-content h3{
