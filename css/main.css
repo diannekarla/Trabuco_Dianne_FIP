@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 body {
-  font-family: "Poppins", "Helvetica", "Arial", "sans-serif";
+  font-family: "Poppins", "Helvetica", "Arial", "sans-serif" !important;
   font-size: 18px;
-  cursor:url("../images/icon-bottle.jpg"), auto;
+  cursor:url("../assets/icons/1.svg"), auto;
 }
 
 header, section, footer{
@@ -258,12 +258,12 @@ nav li a{
 
 nav li.active a{
   color: #df2f26;
-  border-bottom: solid 3px #df2f26;
+  border-bottom: solid 3px #df2f26 !important;
 }
 
 nav li a:hover{
-  color: #df2f26;
-  border-bottom: solid 3px #df2f26;
+  color: #df2f26 !important;
+  border-bottom: solid 3px #df2f26 !important;
 }
 
 a:hover, a:active {
@@ -282,9 +282,9 @@ section.default > div:first-child{
   padding: 50px 0px 80px;
 }
 section > div > .title{
-  font-size: 30pt;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  font-size: 30pt !important;
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
   text-align: center;
   line-height: 1.2;
   text-transform: uppercase;
@@ -408,8 +408,21 @@ section > div > .description{
 }
 
 /* ABOUT US */
+section.about-us .img-container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+section.meet-the-team .carousel .carousel-item .flex > div{
+  flex: 1;
+  padding: 50px;
+}
+
 section.about-us .img-container img{
   width: 100%;
+  max-width: 600px;
+  margin-block-end: 20px;
 }
 
 section.about-us{
