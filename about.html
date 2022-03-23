@@ -102,54 +102,125 @@
       <p class="description margin-bottom-36">As beer culture grows in popularity and beer bars start appearing like hop-scented weeds, it's easy for newcomers to become overwhelmed by the scene's terminology, styles, and other facets. If you have a question that you'd like answered, send us an email and we'll see what we can do. Meanwhile, we hope you find the below round-up informative.</p>
     </div>
     
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="flex">
+      <div class="flex-item">
+        <div id="team-carousel" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-indicators">
+            <button type="button" class="btn-target active"  data-bs-target="#team-carousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" class="btn-target" data-bs-target="#team-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="flex">
+                <div class="img-container" onClick="showDesc('content-01')">
+                  <img src="images/team-1.jpg" data-content="content1" class="team-image d-block" alt="Dori-toes Person">
+                  <!-- <span class="overlay overlay-doritoes"></span> -->
+                </div>
+                <div class="img-container" onClick="showDesc('content-02')">
+                  <img src="images/team-2.jpg" data-content="content2"  onClick="showDesc('content-02')" class="team-image d-block" alt="Dori-toes Person">
+                  <span class="overlay overlay-ankle-is-sore-us"></span>
+                </div>
+                <div class="img-container"  onClick="showDesc('content-03')" >
+                  <img src="images/team-3.jpg" data-content="content3" class="team-image d-block" alt="Dori-toes Person">
+                  <span class="overlay overlay-never-defeeted"></span>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="flex">
+                <div class="img-container"  onClick="showDesc('content-04')" >
+                  <img src="images/team-4.jpg" data-content="content4" class="team-image d-block" alt="Dori-toes Person">
+                  <span class="overlay overlay-made-for-your-sole"></span>
+                </div>
+                <div class="img-container"  onClick="showDesc('content-05')" >
+                  <img src="images/team-2.jpg" data-content="content2" class="team-image d-block" alt="Dori-toes Person">
+                  <span class="overlay overlay-ankle-is-sore-us"></span>
+                </div>
+                <div class="img-container"  onClick="showDesc('content-06')" >
+                  <img src="images/team-3.jpg" data-content="content3" class="team-image d-block" alt="Dori-toes Person">
+                  <span class="overlay overlay-never-defeeted"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" class="btn-target" type="button" data-bs-target="#team-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" class="btn-target" type="button" data-bs-target="#team-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="flex">
-            <div> 
-              <img src="images/team-1.jpg" class="d-block" alt="...">
-            </div>
-            <div> 
-              <img src="images/team-2.jpg" class="d-block" alt="...">
-            </div>
-          </div>
-          
-        </div>
-        <div class="carousel-item">
-          <div class="flex">
-            <div> 
-              <img src="images/team-3.jpg" class="d-block" alt="...">
-            </div>
-            <div> 
-              <img src="images/team-4.jpg" class="d-block" alt="...">
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="flex">
-            <div> 
-              <img src="images/team-5.jpg" class="d-block" alt="...">
-            </div>
-            <div> 
-              <img src="images/team-1.jpg" class="d-block" alt="...">
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+    <small><i>* Hover to their picture to reveal their beer choice and click to know more about them! </i></small>
+   
+    <div class="carousel-content">
+      <div class="carousel-content-item active" id="content-01">
+        <div>
+          <div>Margareth Beersly</div>
+          <div>CEO / COO </div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima veritatis deserunt magnam vero ad incidunt facilis? Similique eveniet commodi et laborum voluptate fugiat, aliquid necessitatibus quas incidunt dignissimos. Unde.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima veritatis deserunt magnam vero ad incidunt facilis? Similique eveniet commodi et laborum voluptate fugiat, aliquid necessitatibus quas incidunt dignissimos. Unde. </p>
+        </div>
+      </div>
+      <div class="carousel-content-item" id="content-02">
+        <div>
+          <div>Margareth Beersly 2</div>
+          <div>CEO / COO </div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima veritatis deserunt magnam vero ad incidunt facilis? Similique eveniet commodi et laborum voluptate fugiat, aliquid necessitatibus quas incidunt dignissimos. Unde.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima veritatis deserunt magnam vero ad incidunt facilis? Similique eveniet commodi et laborum voluptate fugiat, aliquid necessitatibus quas incidunt dignissimos. Unde. </p>
+        </div>
+      </div>
+      <div class="carousel-content-item" id="content-03">
+        <div>
+          <div>Margareth Beersly 3</div>
+          <div>CEO / COO </div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima veritatis deserunt magnam vero ad incidunt facilis? Similique eveniet commodi et laborum voluptate fugiat, aliquid necessitatibus quas incidunt dignissimos. Unde.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima veritatis deserunt magnam vero ad incidunt facilis? Similique eveniet commodi et laborum voluptate fugiat, aliquid necessitatibus quas incidunt dignissimos. Unde. </p>
+        </div>
+      </div>
+      <div class="carousel-content-item" id="content-04">
+        <div>
+          <div>Margareth Beersly 4</div>
+          <div>CEO / COO </div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima veritatis deserunt magnam vero ad incidunt facilis? Similique eveniet commodi et laborum voluptate fugiat, aliquid necessitatibus quas incidunt dignissimos. Unde.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima veritatis deserunt magnam vero ad incidunt facilis? Similique eveniet commodi et laborum voluptate fugiat, aliquid necessitatibus quas incidunt dignissimos. Unde. </p>
+        </div>
+      </div>
+      <div class="carousel-content-item" id="content-05">
+        <div>
+          <div>Margareth Beersly 5</div>
+          <div>CEO / COO </div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima veritatis deserunt magnam vero ad incidunt facilis? Similique eveniet commodi et laborum voluptate fugiat, aliquid necessitatibus quas incidunt dignissimos. Unde.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima veritatis deserunt magnam vero ad incidunt facilis? Similique eveniet commodi et laborum voluptate fugiat, aliquid necessitatibus quas incidunt dignissimos. Unde. </p>
+        </div>
+      </div>
+      <div class="carousel-content-item" id="content-06">
+        <div>
+          <div>Margareth Beersly 6</div>
+          <div>CEO / COO </div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima veritatis deserunt magnam vero ad incidunt facilis? Similique eveniet commodi et laborum voluptate fugiat, aliquid necessitatibus quas incidunt dignissimos. Unde.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima veritatis deserunt magnam vero ad incidunt facilis? Similique eveniet commodi et laborum voluptate fugiat, aliquid necessitatibus quas incidunt dignissimos. Unde. </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showDesc(e){
+        var elems = document.querySelectorAll(".carousel-content-item"); //remove for all
+        [].forEach.call(elems, function(el) {
+            el.classList.remove("active");
+        });
+
+        document.getElementById(e).classList.add("active"); //add on clicked
+        console.log(document.getElementById(e));
+      }
+    </script>
+
 
   </section>
 

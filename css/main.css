@@ -14,6 +14,21 @@ header, section, footer{
 strong{
   font-weight: bold;
 }
+
+a{
+  color:inherit !important;
+  text-decoration: none !important;
+}
+
+a:hover, a:active {
+  color: #df2f26 !important;
+  transition: all .10s ease-out;
+}
+
+ul{
+  margin-bottom: 0 !important;
+}
+
 /* GENERAL */
 
 .hidden {
@@ -104,13 +119,13 @@ footer form input[type="submit"]{
 }
 
 .btn:hover{
-  opacity: .6;
-  background-color: black;
+  background-color:#971710 !important;
+  color:white !important
 }
 
 .btn-red{
-  background: #df2f26;
-  color: white;
+  background-color: #df2f26 !important;
+  color: white !important;
 }
 
 /* TEXT */
@@ -266,10 +281,8 @@ nav li a:hover{
   border-bottom: solid 3px #df2f26 !important;
 }
 
-a:hover, a:active {
-  color: #df2f26;
-  /* border-bottom: solid 3px; */
-  transition: all .10s ease-out;
+.logo img{
+  margin-bottom: 20px;
 }
 
 /* SECTIONS */
@@ -355,11 +368,9 @@ section > div > .description{
 
 /* PRODUCT VARIATIONS */
 .product-variations > div{
-  text-align: center;
   line-height: 1.5;
   overflow: hidden;
   background: #f7f7f7;
-  padding-bottom: 30px;
 }
 .product-variations > div h3{
   font-size: 22px;
@@ -373,6 +384,14 @@ section > div > .description{
 }
 .product-items > div{
   margin-bottom: 20px;
+}
+
+.bottle-information img{
+  cursor: pointer;
+  align-self: center;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 25%;
 }
 
 /* MISION VISION */
@@ -414,10 +433,7 @@ section.about-us .img-container{
   flex-direction: column;
 }
 
-section.meet-the-team .carousel .carousel-item .flex > div{
-  flex: 1;
-  padding: 50px;
-}
+
 
 section.about-us .img-container img{
   width: 100%;
@@ -472,6 +488,88 @@ section .faq-item > div:last-child{
   transition: all 1s ease-in-out;
 }
 
+
+section.meet-the-team{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+section #team-carousel{
+  background: #f9f9f9;
+}
+
+section.meet-the-team small{
+  padding-left: 20px;
+  font-style: italic;
+}
+
+section.meet-the-team .carousel-item img{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+section.meet-the-team .carousel-item .img-container{
+  cursor: pointer;
+  width: fit-content;
+  align-self: center;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+section.meet-the-team .carousel-item .img-container .overlay{
+  opacity: 0; 
+  transition: opacity 2s ease-in-out;
+  -webkit-transition: opacity 2s ease-in-out;  
+  -moz-transition: opacity 2s ease-in-out;   
+
+}
+
+section.meet-the-team .carousel-item .img-container:hover .overlay{
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-size: 35%;
+  background-color: rgba(0,0,0,.6);
+}
+
+section.meet-the-team .carousel-item .img-container .overlay-doritoes{
+  background: url("../assets/bottles/dori-toes.png") no-repeat center center;
+}
+
+section.meet-the-team .carousel-item .img-container .overlay-ankle-is-sore-us{
+  background: url("../assets/bottles/ankle-sore.png") no-repeat center center;
+}
+
+section.meet-the-team .carousel-item .img-container .overlay-made-for-your-sole{
+  background: url("../assets/bottles/made-for-your-sole.png") no-repeat center center;
+}
+
+section.meet-the-team .carousel-item .img-container .overlay-never-defeeted{
+  background: url("../assets/bottles/never-de-feeted.png") no-repeat center center;
+}
+
+section.meet-the-team .carousel-content{
+  background-color: #f7f7f7;
+  padding: 30px 40px;
+  margin: 40px auto;
+}
+
+section.meet-the-team .carousel-content .carousel-content-item{
+  align-self: center;
+  border-left: 2px solid #d0d0d0;
+  padding: 0 40px;
+  display: none;
+}
+
+section.meet-the-team .carousel-content .carousel-content-item.active{
+  display: block;
+}
+
+
 /* ADVERTISEMENTS */
 .advertisements{
   margin-top: 50px;
@@ -500,6 +598,11 @@ footer > div{
 footer ul {
   column-count: 2;
   margin-top: 40px;
+  padding-left: 0;
+}
+
+footer form{
+  margin-bottom: 20px;
 }
 
 /* MOBILE */
